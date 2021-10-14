@@ -1,4 +1,4 @@
-/*
+
 let renderSeries= (SeriesData) => { // Treamos la data del export
     console.log(SeriesData)
     // llamamos desde el id a el nombre de la serie desde HTML
@@ -26,4 +26,3 @@ export let obtenerserie = (searchSerie) => { //Definimos la funcion con una docu
    .finally(() => console.log("promesa resuelta"))
   }
 
-*/
