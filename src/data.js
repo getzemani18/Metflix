@@ -7,9 +7,18 @@ let renderSeries= (SeriesData) => { // Treamos la data del export
     let serieImg = document.getElementById("serieimg")
     //llamamos dede un id a el poster
     let serieyear = document.getElementById("serieyear")
+    // lamamas id de actores
+    let seriesactors = document.getElementById("serieactors")
+    // llamamos id de pais
+    let seriepais = document.getElementById("seriepais")
+    // llamamos id lenguaje
+    let serielenguaje = document.getElementById("serielenguaje")
     serietitle.innerHTML = SeriesData.Title
     serieImg.setAttribute("src", SeriesData.Poster)
-    serieyear.setAttribute("src", SeriesData.Year)
+    serieyear.innerHTML= SeriesData.Year
+    seriesactors.innerHTML = SeriesData.Actors
+    seriepais.innerHTML = SeriesData.Country
+    serielenguaje.innerHTML = SeriesData.Language
 
 }
 
@@ -39,5 +48,7 @@ export let obtenerserie = (searchSerie) => { //Definimos la funcion con una docu
    .finally(() => console.log("promesa resuelta"))
    */
   }
+
+
 
 //Fetch con el año
