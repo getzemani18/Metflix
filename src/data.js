@@ -18,11 +18,26 @@ let renderSeries= (SeriesData) => { // Treamos la data del export
 //APi peliculas 
 export let obtenerserie = (searchSerie) => { //Definimos la funcion con una documentacion "searchserie"
     fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=3067e0bb&s=${searchSerie}`)  // fech es una promesa //$sintaxis que significa que no es un string, que es una variable
-    // Entonces... llamamos a los datos  
+    // Entonces... llamamos a los datos 
+    .then((response) => {
+        console.log(response)
+    if(response.status === 404)    {
+        alert("No encontrado")
+    } else {
+        response.json()
+        .then ((data) => renderSeries(data))
+        .catch((error) => console.log(error))
+    }
+
+    }) 
+    .finally(() => console.log("Promesa Resuelta"))
+    /*
    .then((response) => response.json())
    .then( (data) => renderSeries(data))
    .catch((error) => console.log(error))
    // Finalizamos la promesa
    .finally(() => console.log("promesa resuelta"))
+   */
   }
 
+//Fetch con el año
