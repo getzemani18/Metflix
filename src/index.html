@@ -1,133 +1,148 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>METFLIX</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-       
-        <!------------------ Primera Pantalla del Metflix------------------------->
 
-        <!-- Barra de botones -->
-        
-        <section1 id="pantalla1">
-        <main >
-         <header id="header">
-             <second class="back">
-             <h1 class="h1">
-                 <a href="" title="Metflix" class="a">
-                     <img src="https://fontmeme.com/permalink/211017/5d54d5a12fa7f06c0a9385edd7eb6298.png" alt="Metflix" class="img"></a>
-                </h1>
-              
-         
-          
- 
-         <!------------------- Texto de especificacion Genero ------------------------->
-          
- 
- 
-     <h2 class="text1">Series Exclusivamente Coreanas</h2> 
-     <p class="datos">Ingresa tus datos</p>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>METFLIX</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-         <!------------------------Usuario y contraseña------------------------------ -->
-    
-         <!-- <form action="#" class="form"> -->
-<!-- Caja de correo electrinico  -->
-<!--El autofocus: Cuando está presente, especifica que un <input>elemento debe recibir el foco automáticamente cuando se carga la página.  -->
-<input type="username" name="Username" placeholder="Ingresa tu UserName" id="username" class="redondeado" autofocus>  
-<!-- Contraseña -->
-<input type="password" name="password" placeholder="Ingresa tu contraseña" id="contraseña" class="redondeado" autofocus>
-<!-- Boton para aceptar -->
- <button type="button" value="Empezar"  id="iniciar" class="boton">  
-         </form>
-        </second>
-</section1>
-</header>
+<body>
+    <!------------------ Primera Pantalla del Metflix------------------------->
 
-<!------------------------------Pasar a la sigueinte Pantalla------------------------->
-<!--------Iconos buscar, inicio----->
-<!-- Icono Buscar-->
- 
-<section2 id="pantalla3">
- <input id="input">
+    <!-- Barra de botones -->
+
+    <section id="pantalla1">
+
+
+        <section class="back">
+            <h1 class="h1">
+                <a href="" title="Metflix" class="a">
+                    <img src="https://fontmeme.com/permalink/211017/5d54d5a12fa7f06c0a9385edd7eb6298.png" alt="Metflix"
+                        class="img"></a>
+            </h1>
+
+            <header id="header">
+                <!------------------- Texto de especificacion Genero ------------------------->
+                <h2 class="text1">Series Exclusivamente Coreanas</h2>
+                <p class="datos">Ingresa tus datos</p>
+                <!------------------------Usuario y contraseña------------------------------ -->
+                <!-- <form action="#" class="form"> -->
+                <!-- Caja de correo electrinico  -->
+                <!--El autofocus: Cuando está presente, especifica que un <input>elemento debe recibir el foco automáticamente cuando se carga la página.  -->
+                <input type="username" name="Username" placeholder="Ingresa tu UserName" id="username"
+                    class="redondeado" autofocus>
+                <!-- Contraseña -->
+                <input type="password" name="password" placeholder="Ingresa tu contraseña" id="contraseña"
+                    class="redondeado" autofocus>
+                <!-- Boton para aceptar -->
+                <button type="button" id="iniciar" class="boton" class="btn btn-outline-secondary">Empezar</button>
+            </header>
+        </section>
+
+    </section>
+
+
+    <!------------------------------Pasar a la sigueinte Pantalla------------------------->
+    <!---------------------------Parte "Serie Recomendada"----------------------------->
+    <!-- Seccion Buscar Seria -->
+    <!--------Iconos buscar, inicio----->
+    <!-- Icono Buscar-->
+
+    <section id="pantalla3">
+        <input id="input">
         <button id="buttonbuscar">Buscar Serie</button>
-        
-<!--Icono, Inicio -->
 
-<!---------Card de serie---------->
+        <!---------Card de serie---------->
 
-<div>   
-    <h1 id="serietitle"></h1>
-    <img src="" id="serieimg">
-    <p src="" id="serieyear"></p>
-    <p src="" id="serieactors"></p>
-    <p src="" id="seriepais"></p>
-    <p src="" id="serielenguaje"></p>
-</div>
-</section2>
+        <div>
+            <h1 id="serietitle"></h1>
+            <img src="" id="serieimg">
+            <p src="" id="serieyear"></p>
+            <p src="" id="serieactors"></p>
+            <p src="" id="seriepais"></p>
+            <p src="" id="serielenguaje"></p>
+        </div>
+    </section>
 
 
+    <!-------------------------------Seccion Pantalla 2------------->
+    <!-- Parte Superior -->
+    <section id="pantalla2">
+
+        <div class="contenedor">
+            <h1 class="h1">
+                <a href="" title="Metflix" class="logo">
+                    <img src="https://fontmeme.com/permalink/211017/5d54d5a12fa7f06c0a9385edd7eb6298.png" alt="Metflix"
+                        class="img"></a>
+            </h1>
+
+            <nav>
+                <a href="#" class="activo">Inicio</a>
+                <button id="boton-entrar-buscar">Entrar a Buscar Serie</button>
+
+        </div>
+
+        <!-- Serie Recomendada -->
+        <main>
+            <div class="serie-principal">
+                <div class="contenido">
+                    <h3 class="titulo1">Squide Game</h3>
+                    <p class="descripcion1">
+                        En bancarrota y con esperanza de ganar dinero facil, GI-hun acepta
+                        practicar en un enigmatico juego.Pero en la primera ronda, impensados de horrores
+                        empiezan a ocurrir.</p>
+                    </p>
+                    <!-- Boton reproducir -->
+                    <button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+                    <!-- Boton Infromacion -->
+                    <button role="button" class="boton"><i class="fas fa-info-circle"></i>Informacion</button>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-----------------------------Carruseles de peliculas--------------------------------->
+    <!-- Carrusel 1 -->
+    <!-- Carrucel 2 -->
 
 
 
-<!---------------------------Parte "Serie Recomendada"----------------------------->
-  
-<section3 id="pantalla2">
-    
-<h1 class="grid">hola</h1>
-<h2 class="logotipo">Squid Game</h2>
-<nav>
-    <a href="#">Inicio</a>
-    <a href="#">Buscar Serie</a>
-</nav>
-
-</section3>
-
-<!-- Boton reproducir -->
-<!-- Boton Infromacion -->
 
 
 
-<!-----------------------------Carruseles de peliculas--------------------------------->
-<!-- Carrusel 1 -->
-<!-- Carrucel 2 -->
+    <!-----------------------------------Footer--------------------------------->
+    <!-- 
+    <footer>
+        <div>
+            <ul class="contactos">
+                <li>
+                    <a href="amandamuneca18@gmail.com">...</a>
+                    <i class="fab fa-envelope-o"></i>
+                </li>
+                <li>
+                    <a href="https://twitter.com/jeongaetze?s=09">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+            <span>
+                © Copyright 2021-Proyecto#4-Metflix Getzemani Ramirez
+            </span>
+        </div>
+    </footer>
+-->
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="index.js" type="module"></script>
 
 
+</body>
 
-
-
-
-<!-----------------------------------Footer--------------------------------->
-        
-<footer>
-    <div>
-    <ul class="contactos">
-        <li>
-            <a href="amandamuneca18@gmail.com">...</a>
-            <i class="fab fa-envelope-o"></i>
-        </li>
-        <li>
-            <a href="https://twitter.com/jeongaetze?s=09">
-                <i class="fab fa-twitter"></i>
-              </a>
-        </li>
-    </ul>
-    <span>
-        © Copyright 2021-Proyecto#4-Metflix  Getzemani Ramirez
-    </span>
-    </div> 
-</footer>
-       
-        
-        
-    
-        <script src="index.js" type="module" ></script>
-        
-    </main>
-    </body>
 </html>

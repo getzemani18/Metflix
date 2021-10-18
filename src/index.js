@@ -20,7 +20,21 @@ if(user == "MetName" && contraseña ==123) {
 })
 
 //--------------------PANTALLA 2----------------//
-
+//Boton para entrar a buscar la serie
+let buscar = document.getElementById("boton-entrar-buscar")
+console.log(buscar)
+boton-entrar-buscar.addEventListener("click",() => {
+    let buscarSerie = document.getElementById("pantalla3").value
+    console.log(buscarserie)
+    if (buscar) {
+    document.getElementById("header").hidden = true 
+    document.getElementById("pantalla1").hidden = true
+    document.getElementById("pantalla2").hidden = true
+    document.getElementById("pantalla3").hidden = false
+} else {
+    alert("Aprieta bien el boton")
+}
+})
 
 //trernos esde el data.js la key
 import {obtenerserie} from "./data.js" // importamos el data.js
