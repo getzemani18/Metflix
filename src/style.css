@@ -1,0 +1,96 @@
+/*Parte del Body*/
+body {
+    display: grid;
+}
+/*Header para el segundo Background*/
+header {
+   background: red;
+   margin: 0px 0px 90px;
+   padding: 60px 68px 40px;
+   opacity: .9;
+   border-radius: 30px;
+   
+}
+
+/*Texto Series*/
+.text1 {
+    color: white;
+    text-align: center;
+    font-family: fantasy;
+    font-size:50px;
+}
+
+/*Texto Datos*/
+.datos {
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+/*-----Inputs---*/
+/*Input1*/
+#username{
+    width: 50%;
+    height: 30px;
+    margin: 0.5rem;
+    
+}
+.redondeado {
+ border-radius: 5px ;
+}
+
+/*Input 2*/
+#contraseña {
+    width: 50%;
+    height: 30px;
+    margin: 0.5rem; 
+}
+.redondeado {
+    border-radius: 5px ;
+   }
+
+   /*Boton Empezar*/
+   
+.boton {
+    background: red;
+    color: white;
+    margin: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    float: center;
+
+}
+
+
+/* Footer*/
+.contactos {
+    text-align: center;
+    list-style-type: none;
+    
+}
+.contactos li {
+    display: inline;
+    
+}
+.contacts a{
+    color: white;
+   text-decoration: none;
+   font-weight: bold;
+   
+}
+.contactos i {
+    font-size: 420%;
+    margin: 1%;
+    padding: 5%;
+    color: violet;
+    
+}
+footer > span {
+    
+    margin-top: 5px;
+    display: flex;
+    justify-content: right;
+    font-size: 0.9em;
+    color: rgb(237, 237, 237);
+  }

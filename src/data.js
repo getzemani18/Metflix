@@ -26,7 +26,7 @@ let renderSeries= (SeriesData) => { // Treamos la data del export
 
 //APi peliculas 
 export let obtenerserie = (searchSerie) => { //Definimos la funcion con una documentacion "searchserie"
-    fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=3067e0bb&t=${searchSerie}`)  // fech es una promesa //$sintaxis que significa que no es un string, que es una variable
+    fetch( "https://www.omdbapi.com/?t='' + ''" + `${searchSerie}` + " &apikey=3067e0bb&t")  // fech es una promesa //$sintaxis que significa que no es un string, que es una variable
     // Entonces... llamamos a los datos 
     .then((response) => {
         console.log(response)

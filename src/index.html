@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>METFLIX</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
@@ -14,29 +14,24 @@
         <!------------------ Primera Pantalla del Metflix------------------------->
 
         <!-- Barra de botones -->
-        <section1>
-        <main id="pantalla2">
-         <header class="header">
+        
+        <section1 id="pantalla1">
+        <main >
+         <header id="header">
+             <second class="back">
              <h1 class="h1">
                  <a href="" title="Metflix" class="a">
-                     <img src="#" alt="Metflix" class="img"></a>
+                     <img src="https://fontmeme.com/permalink/211017/5d54d5a12fa7f06c0a9385edd7eb6298.png" alt="Metflix" class="img"></a>
                 </h1>
-
-                <select name="idiomas" id="idiomas">
-                    <option selected lang="es" value="/mx/" data-language="es">Español</option>
-                    <option selected lang="en" value="/mx-en/" data-language="en">Ingles</option>
-                    <option selected lang="ko" value="/mx-ko/" data-language="ko">Koreano</option>
-                </select>
-                
-
-         </header>
+              
+         
           
  
          <!------------------- Texto de especificacion Genero ------------------------->
           
  
  
-     <h2 class="text1">Series Exclusivamente Coreanas</h2>
+     <h2 class="text1">Series Exclusivamente Coreanas</h2> 
      <p class="datos">Ingresa tus datos</p>
 
          <!------------------------Usuario y contraseña------------------------------ -->
@@ -44,30 +39,28 @@
          <!-- <form action="#" class="form"> -->
 <!-- Caja de correo electrinico  -->
 <!--El autofocus: Cuando está presente, especifica que un <input>elemento debe recibir el foco automáticamente cuando se carga la página.  -->
-<input type="email" name="email" placeholder="ingresa tu email" id="emal" autofocus>  
+<input type="username" name="Username" placeholder="Ingresa tu UserName" id="username" class="redondeado" autofocus>  
 <!-- Contraseña -->
-<input type="username" name="username" placeholder="Ingresa tu contraseña" id="contraseña"autofocus>
+<input type="password" name="password" placeholder="Ingresa tu contraseña" id="contraseña" class="redondeado" autofocus>
 <!-- Boton para aceptar -->
-<button type="button" value="Empezar"  id="iniciar" autocomplete="email">
+ <button type="button" value="Empezar"  id="iniciar" class="boton">  
          </form>
-
-
-
-
-
-</main>
+        </second>
 </section1>
-
+</header>
 
 <!------------------------------Pasar a la sigueinte Pantalla------------------------->
 <!--------Iconos buscar, inicio----->
 <!-- Icono Buscar-->
-<section2>
+ 
+<section2 id="pantalla3">
  <input id="input">
         <button id="buttonbuscar">Buscar Serie</button>
+        
 <!--Icono, Inicio -->
 
 <!---------Card de serie---------->
+
 <div>   
     <h1 id="serietitle"></h1>
     <img src="" id="serieimg">
@@ -83,6 +76,18 @@
 
 
 <!---------------------------Parte "Serie Recomendada"----------------------------->
+  
+<section3 id="pantalla2">
+    
+<h1 class="grid">hola</h1>
+<h2 class="logotipo">Squid Game</h2>
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Buscar Serie</a>
+</nav>
+
+</section3>
+
 <!-- Boton reproducir -->
 <!-- Boton Infromacion -->
 
@@ -98,18 +103,31 @@
 
 
 <!-----------------------------------Footer--------------------------------->
-        <div id="footer">
+        
 <footer>
+    <div>
+    <ul class="contactos">
+        <li>
+            <a href="amandamuneca18@gmail.com">...</a>
+            <i class="fab fa-envelope-o"></i>
+        </li>
+        <li>
+            <a href="https://twitter.com/jeongaetze?s=09">
+                <i class="fab fa-twitter"></i>
+              </a>
+        </li>
+    </ul>
     <span>
         © Copyright 2021-Proyecto#4-Metflix  Getzemani Ramirez
     </span>
+    </div> 
 </footer>
-        </div>
+       
         
         
-        
+    
         <script src="index.js" type="module" ></script>
         
-
+    </main>
     </body>
 </html>
