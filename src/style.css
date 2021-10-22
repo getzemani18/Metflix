@@ -1,0 +1,280 @@
+/*Parte del Body*/
+body {
+  display: grid;
+  background-color: black;
+}
+/*---------------------Pantalla 1------------------ */
+/*Header para el segundo Background*/
+header {
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+  width: 70%;
+  margin: auto;
+  background: rgba(238, 25, 25, 0.692);
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.85rem;
+  opacity: 0.9;
+}
+
+/*Texto Series*/
+.text1 {
+  color: white;
+  text-align: center;
+  font-family: fantasy;
+  font-size: 50px;
+}
+
+/*Texto Datos*/
+.datos {
+  color: white;
+  text-align: center;
+  font-family: monospace;
+  font-size: 30px;
+}
+
+/*-----Inputs---*/
+.alineados {
+  margin-right: auto;
+  align-items: center;
+  justify-content: end;
+}
+
+/*Input1*/
+
+#username {
+  width: 40%;
+  height: 30px;
+  margin: 0.5rem;
+  align-items: center;
+}
+.redondeado {
+  border-radius: 5px;
+}
+
+/*Input 2*/
+
+#contraseña {
+  width: 40%;
+  height: 30px;
+  margin: 0.5rem;
+}
+.redondeado {
+  border-radius: 5px;
+}
+
+/*Boton Empezar*/
+
+.boton {
+  background: red;
+  color: white;
+  margin: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  float: left;
+  justify-content: center;
+}
+
+/*----------------------Pantalla 2----------------*/
+/* Parte Superior */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navigationBar {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+#pantalla2 {
+  padding: 30px 0;
+}
+
+#pantalla2 .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+a:hover {
+  color: red;
+}
+
+/* Parte Serie Recomendada */
+.serie-principal {
+  font-size: 16px;
+  min-height: 40.62em;
+  color: white;
+  background: linear-gradient(rgb(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url(assets-recomendadas/juegodelcalamar.jpeg);
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 3.12em;
+  display: flex;
+  align-items: end;
+}
+
+.serie-principal .contenido {
+  margin: 0 auto;
+  margin-bottom: 6.25em;
+}
+
+.serie-principal .titulo1 {
+  font-weight: 600;
+  font-size: 3.12em;
+  margin-bottom: 20px;
+}
+
+.serie-principal .deescripcion1 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  max-width: 50%;
+  margin-bottom: 1.25em;
+}
+
+.serie-principal .boton {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  color: white;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  font-size: 18px;
+}
+.serie-principal .boton:hover {
+  background: white;
+  color: black;
+}
+
+.serie-principal .boton i {
+  margin-right: 20px;
+}
+/* Recomendadas */
+/*--------------------------------------------Pantalla 3-------------------- */
+/* Buscar la serie  */
+.buscar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Titulo */
+.contenedorTitulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  color: blueviolet;
+}
+
+.contenedorTitulo h3 {
+  color: aliceblue;
+  font-size: 30px;
+}
+
+/* --Contenedor principal y flechas */
+.card-body {
+  text-align: center;
+}
+.card-title {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+.card-text {
+  font-size: 20px;
+  color: white;
+  font-style: italic;
+  text-align: right;
+}
+
+.actors {
+  color: white;
+  text-align: center;
+  font-style: oblique;
+}
+.card-img-top {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+.card-time {
+  color: black;
+  text-align: center;
+  font-size: 15px;
+}
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+  #pantalla2 .logotipo {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  #pantalla2 .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .serie-principal {
+    font-size: 14px;
+  }
+
+  .serie-principal .descripcion1 {
+    max-width: 100%;
+  }
+}
+
+/*-----------------------------Pantalla 3 *----------------------------*/
+#info {
+  text-align: center;
+  font-family: fantasy;
+}
+
+#serietitle {
+  font-size: 40px;
+  color: red;
+}
+
+#info2 {
+  font-size: 20px;
+  color: rgb(192, 42, 42);
+}
+
+/*---------------Footer en todas las pantallas----------*/
+.contactos {
+  text-align: center;
+  list-style-type: none;
+}
+.contactos li {
+  display: inline;
+}
+.contacts a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.contactos i {
+  font-size: 420%;
+  margin: 1%;
+  padding: 5%;
+  color: violet;
+}
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  text-align: end;
+  justify-content: end;
+  font-size: 0.9em;
+  color: rgb(237, 237, 237);
+}
