@@ -11,7 +11,7 @@ header {
   font-size: 18px;
   width: 70%;
   margin: auto;
-  background: red;
+  background: rgba(238, 25, 25, 0.692);
   padding: 2.5rem 0.625rem;
   border-radius: 0.85rem;
   opacity: 0.9;
@@ -34,19 +34,28 @@ header {
 }
 
 /*-----Inputs---*/
+.alineados {
+  margin-right: auto;
+  align-items: center;
+  justify-content: end;
+}
+
 /*Input1*/
+
 #username {
-  width: 50%;
+  width: 40%;
   height: 30px;
   margin: 0.5rem;
+  align-items: center;
 }
 .redondeado {
   border-radius: 5px;
 }
 
 /*Input 2*/
+
 #contraseña {
-  width: 50%;
+  width: 40%;
   height: 30px;
   margin: 0.5rem;
 }
@@ -63,7 +72,7 @@ header {
   padding: 12px;
   border-radius: 8px;
   float: left;
-  text-align: center;
+  justify-content: center;
 }
 
 /*----------------------Pantalla 2----------------*/
@@ -74,11 +83,12 @@ header {
   box-sizing: border-box;
 }
 
-.contenedor {
-  width: 90%;
-  margin: auto;
+.navigationBar {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
-
 #pantalla2 {
   padding: 30px 0;
 }
@@ -89,14 +99,14 @@ header {
   align-items: center;
 }
 
-#pantalla2 nav a {
+a {
   color: white;
   text-decoration: none;
   margin-right: 20px;
   font-size: 25px;
 }
 
-#pantalla2 nav a:hover {
+a:hover {
   color: red;
 }
 
@@ -152,7 +162,58 @@ header {
 .serie-principal .boton i {
   margin-right: 20px;
 }
+/* Recomendadas */
+/*--------------------------------------------Pantalla 3-------------------- */
+/* Buscar la serie  */
+.buscar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Titulo */
+.contenedorTitulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  color: blueviolet;
+}
 
+.contenedorTitulo h3 {
+  color: aliceblue;
+  font-size: 30px;
+}
+
+/* --Contenedor principal y flechas */
+.card-body {
+  text-align: center;
+}
+.card-title {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+.card-text {
+  font-size: 20px;
+  color: white;
+  font-style: italic;
+  text-align: right;
+}
+
+.actors {
+  color: white;
+  text-align: center;
+  font-style: oblique;
+}
+.card-img-top {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+.card-time {
+  color: black;
+  text-align: center;
+  font-size: 15px;
+}
 /* ---- ----- ----- Media Queries ----- ----- ----- */
 @media screen and (max-width: 800px) {
   #pantalla2 .logotipo {
@@ -172,6 +233,22 @@ header {
   .serie-principal .descripcion1 {
     max-width: 100%;
   }
+}
+
+/*-----------------------------Pantalla 3 *----------------------------*/
+#info {
+  text-align: center;
+  font-family: fantasy;
+}
+
+#serietitle {
+  font-size: 40px;
+  color: red;
+}
+
+#info2 {
+  font-size: 20px;
+  color: rgb(192, 42, 42);
 }
 
 /*---------------Footer en todas las pantallas----------*/

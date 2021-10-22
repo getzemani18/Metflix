@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <!------------------ Primera Pantalla del Metflix------------------------->
+    <!------------------ ------------------------------------Primera Pantalla del Metflix------------------------------------------------->
 
     <!-- Barra de botones -->
 
@@ -37,43 +37,76 @@
                 <!-- <form action="#" class="form"> -->
                 <!-- Caja de correo electrinico  -->
                 <!--El autofocus: Cuando está presente, especifica que un <input>elemento debe recibir el foco automáticamente cuando se carga la página.  -->
-                <input type="username" name="Username" placeholder="Ingresa tu UserName" id="username"
-                    class="redondeado" autofocus>
-                <!-- Contraseña -->
-                <input type="password" name="password" placeholder="Ingresa tu contraseña" id="contraseña"
-                    class="redondeado" autofocus>
+                <div class="alineados">
+                    <input type="username" name="Username" placeholder="Ingresa tu UserName" id="username"
+                        class="redondeado" autofocus>
+                    <!-- Contraseña -->
+                    <input type="password" name="password" placeholder="Ingresa tu contraseña" id="contraseña"
+                        class="redondeado" autofocus>
+                </div>
                 <!-- Boton para aceptar -->
                 <button type="button" id="iniciar" class="boton" class="btn btn-outline-secondary">Empezar</button>
+
             </header>
         </section>
 
     </section>
 
 
-    <!------------------------------Pasar a la sigueinte Pantalla------------------------->
+    <!---------------------------------------------------------------Pantalla 3---------------------------------------->
     <!---------------------------Parte "Serie Recomendada"----------------------------->
     <!-- Seccion Buscar Seria -->
     <!--------Iconos buscar, inicio----->
     <!-- Icono Buscar-->
 
     <section id="pantalla3">
-        <input id="input">
-        <button id="buttonbuscar">Buscar Serie</button>
 
+
+        <div class="navigationBar">
+            <a href="" title="Metflix" class="logo">
+                <img src="https://fontmeme.com/permalink/211017/5d54d5a12fa7f06c0a9385edd7eb6298.png" alt="Metflix"
+                    class="img">
+            </a>
+            <!-- Boton regresar -->
+            <button type="button" id="regresar" class="btn btn-success">Regresar</button>
+            <!-- Boton buscar -->
+            <nav class="navbar navbar-red bg-red">
+                <div class="container-fluid">
+                    <form class="d-flex">
+                        <input id="input" class="form-control me-2" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button type="button" id="buttonbuscar" class="btn btn-outline-success" role="button">Buscar
+                            Serie</button>
+                    </form>
+                </div>
+            </nav>
+            <!--  
+                <input id="input">
+                <button id="buttonbuscar">Buscar Serie</button>
+                -->
+
+        </div>
         <!---------Card de serie---------->
 
-        <div>
+        <hr>
+        <div id="info">
             <h1 id="serietitle"></h1>
-            <img src="" id="serieimg">
-            <p src="" id="serieyear"></p>
-            <p src="" id="serieactors"></p>
-            <p src="" id="seriepais"></p>
-            <p src="" id="serielenguaje"></p>
+            <img src="" class="rounded" id="serieimg">
+            <div id="info2">
+                <p src="" id="serieyear"></p>
+                <p src="" id="serieactors"></p>
+                <p src="" id="seriepais"></p>
+                <p src="" id="serielenguaje"></p>
+                <p src="" id="seriegenero"></p>
+                <p src="" id="serietrama"></p>
+                <p src="" id="serietime"></p>
+            </div>
         </div>
+        <!-- <section id="popular"></section> -->
     </section>
 
 
-    <!-------------------------------Seccion Pantalla 2------------->
+    <!---------------------------------------------------------Seccion Pantalla 2---------------------------------------------->
     <!-- Parte Superior -->
     <section id="pantalla2">
 
@@ -84,10 +117,11 @@
                         class="img"></a>
             </h1>
 
-            <nav>
-                <a href="#" class="activo">Inicio</a>
-                <button id="boton-entrar-buscar">Entrar a Buscar Serie</button>
 
+            <a href="#" class="activo">Inicio</a>
+            <button type="button" id="botonentrarbuscar" class="btn btn-danger">Buscar Serie</button>
+
+            <section id="popular"></section>
         </div>
 
         <!-- Serie Recomendada -->
@@ -100,45 +134,89 @@
                         practicar en un enigmatico juego.Pero en la primera ronda, impensados de horrores
                         empiezan a ocurrir.</p>
                     </p>
-                    <!-- Boton reproducir -->
-                    <button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
                     <!-- Boton Infromacion -->
-                    <button role="button" class="boton"><i class="fas fa-info-circle"></i>Informacion</button>
+                    <button title="Lee Jung-jae, Park Hae-soo, Wi Ha-Joon" role="button" class="boton"><i
+                            class="fas fa-info-circle"></i>Informacion</button>
                 </div>
             </div>
+            <!-- Series Datos -->
+            <section id="selecionSeries"></section>
+
         </main>
     </section>
 
-    <!-----------------------------Carruseles de peliculas--------------------------------->
-    <!-- Carrusel 1 -->
-    <!-- Carrucel 2 -->
-
-
-
-
-
-
     <!-----------------------------------Footer--------------------------------->
-    <!-- 
-    <footer>
-        <div>
-            <ul class="contactos">
-                <li>
-                    <a href="amandamuneca18@gmail.com">...</a>
-                    <i class="fab fa-envelope-o"></i>
-                </li>
-                <li>
-                    <a href="https://twitter.com/jeongaetze?s=09">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-            </ul>
-            <span>
-                © Copyright 2021-Proyecto#4-Metflix Getzemani Ramirez
-            </span>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-gray text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Connectate con Metflix</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="https://twitter.com/jeongaetze?s=09" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/amanda-ramirez-864988218/" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/getzemani18" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Metflix
+                        </h6>
+                        <p>
+                            Metflix es una aplicacion donde podras ver series Coreanas, podras saber informacion de cada
+                            serie.
+                            Disfruta de esta Plataforma Gratis!!!
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contactos
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i>Mexico City. oct 2021</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            amandamuneca18@gmail.com
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Getzemani Ramirez</a>
         </div>
+        <!-- Copyright -->
     </footer>
--->
+    <!-- Footer -->
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <script src="index.js" type="module"></script>
 
