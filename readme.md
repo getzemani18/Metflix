@@ -18,7 +18,7 @@
 
 ## 1. Descripcion
 
-**Metflix :** es una aplicacion de series donde solo veras Series Coreanas, de todo tipo de genero.
+**Metflix :** Aplicacion de series donde solo veras Series Coreanas, de todo tipo de genero.
 
 ---
 
@@ -29,7 +29,7 @@
 
 ## 2. Definicion de Usuario
 
-El usuario podra observar un catalogo de series corenas, podra elegir la serie que el desea ver, ademas podra obtener informacion de la pelicula.
+El usuario podra observar un catalogo de series coreanas, podra elegir la serie que desea ver, ademas podra obtener informacion de la pelicula.
 
 ---
 
