@@ -85,3 +85,8 @@ export let obtenerserie = (searchSerie) => { //Definimos la funcion con una docu
 ## 8. Footer
 
 © Copyright 2021-Proyecto#4-Metflix Getzemani Ramirez
+
+## 8. User and Password
+
+- User: MetName
+- Password: kdramaticas
